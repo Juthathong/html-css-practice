@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css format </title>
+    <style>
+        /* * คือการกำหนดstyle ให้ทุกแท็กให้เหมือนกันหมด */
+        /* internal embeded*/
+        p{
+            font-style:italic;
+        }
+         body{
+            font-size:20px; 
+        }
+        div{
+            font-size: 2em;
+            /* rem มีค่า2เท่า ของ root element ก็คือ 20*2 40px */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- inline -->
+    <p style="color:red;font-weight:bolder;">Juthathong</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Juthathong</h1>
+    <h1 class="title">CSS</h1>
+    <p id="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam quas necessitatibus et tempore? A aspernatur dolor nihil odit voluptate.</p>
+    <div>css3</div>
+    <div>css3</div>
+    <div>
+        <!-- อ้างอิงจากelement ใกล้เคียง *2  -->
+        test1 (10*2=20px)
+        <div>
+            test2 (20*2=40px)
+            <div>
+                test3
+                <div>
+                    test4
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

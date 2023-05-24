@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> style link</title>
+    <style>
+        body{
+            height: 4000px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            background-color: rgb(126, 73, 8);
+            color: blanchedalmond
+        }
+        a:active{
+            background-color: rgb(192, 20, 154);
+            color: rgb(2, 7, 7);
+        }
+        li{
+            display: inline;
+        }
+        li a{
+            padding-right: 20px;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        .box0{
+            width: 30%;
+            box-sizing: border-box;
+            display: inline-block;
+            background-color: bisque;
+            padding: 10px;
+        }
+        .img{
+            border: 5px dashed rgb(223, 13, 13);
+        }
+        img{
+            width: 200px;
+        }
+        img#img1{
+            visibility: hidden;
+        }
+        img#img2{
+            visibility: visible;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+            background-color: rgb(243, 161, 54);
+            position: relative;  
+            left: 50px;
+            top: 50px; 
+            z-index: 1;
+            /* z-index เลข1คือให้มาอยู่หน้า 0 ให้อยู่หลัง */
+        }
+        #box2{
+            background-color: rgb(35, 38, 111);
+            position: absolute;
+            top: 200px;
+            right: 50px;
+        }
+        #box3{
+            background-color: aquamarine;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            /* เคลื่อนที่ในคอนเทนเนอร์ */
+        }
+        #box4{
+            background-color: rgb(209, 245, 3);
+            position: fixed;
+        } 
+        #box5{
+            background-color: rgb(167, 63, 146);
+            position: sticky;
+            top: 0
+            ;
+            
+        }
+        .container{
+            background-color: rgb(26, 129, 43);
+            width: 500px;
+            height: 300px;
+            position: relative;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <a href="/home">home</a>
+    <a href="http://www.google.com">google</a>
+    <a href="http://www.facebook.com">facebook</a>
+    <a href="#">About</a>
+    <hr>
+    <ul>
+        <li> <a href="">Home</a></li>
+        <li> <a href="">About</a></li>
+        <li> <a href="">page</a></li>
+        <li> <a href="">contact</a></li>
+    </ul>
+    <hr>
+    <div class="box0">
+        <h1>Title1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nulla autem voluptatum officiis aliquam, voluptas odit provident facere magni dolores?</p>
+        <h1>Title2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nulla autem voluptatum officiis aliquam, voluptas odit provident facere magni dolores?</p>
+
+        <h1>Title3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nulla autem voluptatum officiis aliquam, voluptas odit provident facere magni dolores?</p>
+    </div>
+    <hr>
+    <div class="img">
+       <img id="img1" src="img/Screenshot (1).png" alt="" srcset="">
+       <img id="img2" src="img/Screenshot (1).png" alt="" srcset="">
+    </div>
+    <hr>
+    <div id="box1" class="box"></div>
+    <div class="container">
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+    </div>
+    
+    <div id="box4" class="box"></div>
+    <div id="box5" class="box"></div>
+
+</body>
+</html>
